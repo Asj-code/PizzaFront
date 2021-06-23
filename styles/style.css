@@ -73,7 +73,8 @@ h2 {
     width: 490px;
     height: 350px;
     margin: 30px 10px;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .podio-img {
