@@ -4,7 +4,7 @@
 
 ### Frontend I - Project Six
 
-### [Take a look!](https://asj-code.github.io/Heroes/)
+### [Take a look!](https://asj-code.github.io/PizzaFront/)
 
 The challenge is focused on the layout of a static page designed using flexbox. The main idea is put in practice flexbox positioning.
 
