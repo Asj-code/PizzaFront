@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --backgroundColor:  #E5E5E5;
+    --mainColor: #ffffff;
+    --background: #222222; 
+    --titlesColor: red;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +14,7 @@
 }
 
 body {
-    background: #E5E5E5;
+    background: var(--backgroundColor);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,10 +31,10 @@ header {
     justify-content: space-between;
     align-items: center;
     /* max-width: 1024px; */
-    color: #ffffff;
+    color: var(--mainColor);
     height: 100px;
-    padding: 50px 10px;
-    background: #222222;
+    padding: 50px 50px;
+    background: var(--background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: 400;
 }
@@ -50,31 +57,36 @@ h2, h3, ol li {
 }
 
 h2 {
-    color: red;
+    color: var(--titlesColor);
 }
 .white {
-    color: #ffffff;
+    color: var(--mainColor);
 }
 
 .main-images{
     display: flex;
+    justify-content: space-around;
+
 }
 
 
 .pizza-delivery {
     background: url("../img/delivery.jpeg");
+    background-size: cover;
     border-radius: 5px;
-    width: 490px;
-    height: 350px;
+    width: 800px;
+    height: 700px; 
     margin: 30px 10px;
 }
 
 .pizza-podio {
     display: flex;
-    background: #FFFFFF;
+    background: var(--mainColor);
     border-radius: 5px;
-    width: 490px;
-    height: 350px;
+    /* width: 490px;
+    height: 350px;  */
+    width: 800px;
+    height: 700px;
     margin: 30px 10px;
     justify-content: space-around;
     align-items: center;
@@ -90,12 +102,13 @@ footer {
     height: 150px;
     left: calc(50% - 1024px/2);
     bottom: 8px;
-    background: #222222;
+    background: var(--background);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    color: var(--mainColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
 }
 
 footer ul{
@@ -129,5 +142,10 @@ footer img {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .pizza-delivery ,.pizza-podio{
+        width: 490px;
+        height: 350px; 
+    }
+
 }
 
